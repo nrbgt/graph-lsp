@@ -12,11 +12,11 @@ class TurtleLanguageServer(PythonModuleSpec):
 
     python_module = "jupyterlab_graph_lsp.servers.turtle"
     key = "turtle-language-server"
-    languages = ["turtle", "ttl"]
+    languages = ["turtle", "ttl", "iturtle"]
     args = ["--stdio"]
     spec = dict(
         display_name=key,
-        mime_types=["text/turtle"],
+        mime_types=["text/turtle", "text/x-iturtle"],
         urls=dict(
             home=f"{URL}/tree/master/packages/{key}",
             issues=f"{URL}/issues",

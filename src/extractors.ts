@@ -17,11 +17,11 @@ export const graphExtractors: IForeignCodeExtractorsRegistry = {
       file_extension: 'sparql',
     }),
     new RegExpForeignCodeExtractor({
-      language: 'turtle',
+      language: 'iturtle',
       pattern: '^%%(ttl|turtle)( .*?)?\n([^]*)',
       foreign_capture_groups: [3],
       is_standalone: true,
-      file_extension: 'ttl',
+      file_extension: 'ittl',
     }),
     new RegExpForeignCodeExtractor({
       language: 'graphql',
